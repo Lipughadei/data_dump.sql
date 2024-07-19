@@ -3,7 +3,10 @@
 -- Host: localhost    Database: test
 -- ------------------------------------------------------
 -- Server version       5.5.68-MariaDB
-
+USE `testdb7`;
+ALTER TABLE `exp1` ADD `phone3` int(20);
+ALTER TABLE `exp1` ADD `email_id` varchar(20);
+UPDATE `exp1` SET `phone`="0000000001" WHERE `id`="2" ;
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
